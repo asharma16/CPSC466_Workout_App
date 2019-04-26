@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-
 <html>
-
 <body>
-
 <form action="/action_page.php">
-
   Date:
-
   <input type="date" name="day">
-
   <br>
-
   Time:
-
   <input type="time" name="usr_time">
-
   <br>
-
   <input type="radio" name="frequency" value="One Time"> One Time<br>
-
   <input type="radio" name="frequency" value="Weekly"> Weekly<br>
-
   <input type="radio" name="frequency" value="Monthly"> Monthly<br> 
-
   <input type="submit">
-
   </form>
-
 </body>
-
 </html>
