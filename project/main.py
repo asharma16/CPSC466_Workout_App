@@ -30,6 +30,11 @@ def meal_plans():
 def tools():
     return render_template('tools.html', name=current_user.name)
 
+@main.route('/spotify')
+@login_required
+def spotify():
+    return render_template('spotify.html', name=current_user.name)
+
 @main.route('/about')
 @login_required
 def about():
