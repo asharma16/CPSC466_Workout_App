@@ -1,0 +1,20 @@
+<!-- templates/profile.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Welcome, {{ name }}!
+</h1>
+
+<body>
+  <ul>
+      <li style="color:magenta;"><a href="/workouts">Workouts</a></li>
+      <li style="color:magenta;"><a href="/meal_plans">Meal Plans</a></li>
+      <li style="color:magenta;"><a href="/tools">Tools</a></li>
+      <li style="color:magenta;"><a href="/about">About</a></li>
+  </ul>
+  </body>
+
+
+  {% endblock %}
