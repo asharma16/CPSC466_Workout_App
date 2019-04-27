@@ -18,7 +18,7 @@ For Windows OS, assume the repository is on Desktop:
         Open Powershell (no need to run as administrator).
         Its default path should be at the user folder, so run command " cd ./Desktop/CPSC466_Workout_App " or " cd ./Your_download_folder/CPSC466_Workout_App ", you can use "Tab" key to automatically complete the file/folder name.
         Next run command " $env:FLASK_APP = "project" " (must have quotation marks around the word project, "project" indicates to the project folder inside our repository root folder; also 'FLASK_APP' can be all lowercases and no spaces around '=' is OK).
-        Finally you can run command " flask run ", the " FLASK_DEBUG = 1 " command is optional.
+        Finally you can run command " flask run ", the " $env:FLASK_DEBUG = 1 " command is optional.
 
     Command Prompt, CMD:
         Open CMD (no need to run as administrator).
