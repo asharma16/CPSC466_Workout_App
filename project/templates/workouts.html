@@ -3,33 +3,60 @@
 {% block content %}
 <head>
     <title>Premade Workouts</title> 
-    <h1 style="color:magenta;" class="title"> Hello {{ name }}! Welcome, to the Premade Workouts Page.</h1>
+    <h1 style="color:magenta;" class="title"> Hello {{ name }}! </h1>
+    <h2 style='color:black;'>Welcome, to the Premade Workouts Page.</h1>
 </head>
 
 </br>
-
 <body>
-    <p style="color:magenta;">Pick your Workouts!</p>
-     <ul>
-         <li><a href="/warm_up">Warm Up</a></li>
-          <li><a href="/build_total_body_strength">Build Total-Body Strength</a></li>
-          <li><a href="/train_your_body_in_5_minutes">Train Your Body in 5 Minutes</a></li>
-          <li><a href="/improve_your_endurance">Improve Your Endurance</a></li>
-     </br>
-     </br>
-          <p style="color:magenta;">Pick your Workout Playlist!</p>
-          <li><a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a></li>
-          <li><a href="https://www.youtube.com/watch?v=o3WdLtpWM_c&list=PLMmqTuUsDkRINEEFXWy7Ne2897vCdxJg1">Techno</a></li>
-          <li><a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek&list=PL8fAVuusm10qMUzauh8UoYkzrRHO0KU1z">Rock</a></li>
-          <li><a href="https://www.youtube.com/watch?v=VkloKZmQ3o4&list=PL6s8R-CiO2_zB85o0H4PSZeebk5P-PUWx">Country</a></li>
-          <li><a href="https://www.youtube.com/watch?v=Tztc73r8348&list=PLChOO_ZAB22WuyDODJ3kjJiU0oQzWOTyb">Pop</a></li>
-          <li><a href="https://www.youtube.com/watch?v=DNobqcfLb2Y&list=PLxvodScTx2RsV2VIDIBksBmuLFngu3mgU">Reggae</a></li>
-          <li><a href="https://www.youtube.com/watch?v=FEAZyRfgevc">EDM</a></li>
-          <li><a href="https://www.youtube.com/watch?v=EFJ7kDva7JE&list=PLxvodScTx2RtAOoajGSu6ad4p8P8uXKQk">Classical</a></li>
-        </ul>
+        <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 8px;
+            height: 300px; 
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          </style>
+
+        <div class="row">
+          <div class="column" style="background-color: rgb(166, 209, 226)">
+                <p style="color:magenta;">Pick your Workouts!</p>
+                <ul>
+                         <li><a href="/warm_up">Warm Up</a></li>
+                         <li><a href="/build_total_body_strength">Build Total-Body Strength</a></li>
+                         <li><a href="/train_your_body_in_5_minutes">Train Your Body in 5 Minutes</a></li>
+                         <li><a href="/improve_your_endurance">Improve Your Endurance</a></li>
+          </div>
+    
+          <div class="column" style="background-color: rgb(139, 200, 224)">
+                <p style="color:magenta;">Pick your Workout Playlist!</p>
+                <li><a href="https://www.youtube.com/watch?v=sdtX44n4-lc&list=PLChOO_ZAB22WAvnFw86vUueyv026ULwIv&index=4">Hip-Hop</a></li>
+                <li><a href="https://www.youtube.com/watch?v=o3WdLtpWM_c&list=PLMmqTuUsDkRINEEFXWy7Ne2897vCdxJg1">Techno</a></li>
+                <li><a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek&list=PL8fAVuusm10qMUzauh8UoYkzrRHO0KU1z">Rock</a></li>
+                <li><a href="https://www.youtube.com/watch?v=VkloKZmQ3o4&list=PL6s8R-CiO2_zB85o0H4PSZeebk5P-PUWx">Country</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Tztc73r8348&list=PLChOO_ZAB22WuyDODJ3kjJiU0oQzWOTyb">Pop</a></li>
+                <li><a href="https://www.youtube.com/watch?v=DNobqcfLb2Y&list=PLxvodScTx2RsV2VIDIBksBmuLFngu3mgU">Reggae</a></li>
+                <li><a href="https://www.youtube.com/watch?v=FEAZyRfgevc">EDM</a></li>
+                <li><a href="https://www.youtube.com/watch?v=EFJ7kDva7JE&list=PLxvodScTx2RtAOoajGSu6ad4p8P8uXKQk">Classical</a></li>
+              </ul>
+          </div>
+        </div>
     </body>
+
 </br>
-</br>
+
     
     <footer style="color:magenta;"> 
           <a href="/">Back to homepage</a>  </br>
