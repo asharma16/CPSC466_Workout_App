@@ -6,17 +6,15 @@ Three main packages needed to run the project:
 2. Flask-Login
 3. Flask-SQLAlchemy
 In order to run the application on virtualenv:
+For Linux/MacOS
 
+```
 export FLASK_APP=project name
 
 export FLASK_DEBUG
 
 flask run
-
-********************************************************************
-
-
-
+```
 ********************************************************************
 
 For Windows OS, assume the repository is on Desktop:
