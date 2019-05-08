@@ -84,9 +84,10 @@ def the_skinny_guy_muscle_gain_plan():
 @main.route('/bmi_tool')
 @login_required
 def bmi_tool():
-    return render_template('bmi.html', name=current_user.name                  
-                           
- @main.route('/calc_tool')
- @login_required
- def calc_tool():
+    return render_template('bmi.html', name=current_user.name)
+
+
+@main.route('/calc_tool')
+@login_required
+def calc_tool():
     return render_template('calorie.html', name=current_user.name)
