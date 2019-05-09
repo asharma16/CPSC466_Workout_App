@@ -9,7 +9,7 @@ In order to run the application on virtualenv:
 For Linux/MacOS
 
 ```
-export FLASK_APP=project name
+export FLASK_APP=project_name
 
 export FLASK_DEBUG
 
